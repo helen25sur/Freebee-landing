@@ -12,5 +12,5 @@ menuBtn.addEventListener('click', function () {
 
 allDoc.addEventListener('click', function () {
 	menu.classList.remove("active");
-	menuBtn.classList.toggle("fa-times");
+	menuBtn.classList.remove("fa-times");
 });
