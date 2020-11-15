@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Freebie</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="preload" href="assets/fonts/Gilroy/Gilroy-Regular.woff" as="font">
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<!-- =================== Main Header =============== -->
+	<header class="main-header">
+		<a href="index.html" class="logo-for-main">
+			<img src="assets/img/svg/logo.svg" alt="logotype" class="logo">
+			<!-- Дабавила в стилях логотип через background-image для возможности сделать hover-состояние: изменение на оранжевый логотип. Но в коде оставляю, если вдруг в стилях что-то сломается -->
+		</a>
+
+		<div class="mobile-menu">
+			<a class="fas fa-bars"></a>
+		</div>
+
+		<nav class="main-navigation">
+			<a href="index.html" class="nav-link">Home</a>
+			<a href="#about-us" class="nav-link">About Us</a>
+			<a href="#our-services" class="nav-link">Services</a>
+			<a href="#our-blog" class="nav-link">Blogs</a>
+		</nav>
+
+
+		<button type="button" class="section-button finder-popup">Gift Finder</button>
+	</header>
+
+	<!-- =================== Main Content =============== -->
+
+	<main class="content">
+		<!-- =================== About Company =============== -->
+		<section class="section-promo">
+			<img src="assets/img/promo-photo-couple.jpg" alt="happy couple" class="promo-photo">
+			<div class="section-text">
+				<p class="tagline">
+					Find a gift for your wife or girlfriend
+				</p>
+				<p class="text-promo-description">
+					Struggling to find a gift for your wife or girlfriend? No problem!
+				</p>
+				<a href="#" class="section-button more-gifts">Find gift now</a>
+			</div>
+		</section>
+
+		<section id="about-us" class="section-promo">
+			<img src="assets/img/promo-photo-thanks.jpg" alt="thanks photo" class="promo-photo">
+			<div class="section-text">
+				<h2 class="section-title">How we work</h2>
+				<p class="text-description">
+					We’ve actually already asked hundreds of women what they want, and made a database with the results. All you
+					have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you
+					with a few perfect gift options.
+				</p>
+				<a href="#" class="section-button all-about-us">Learn more</a>
+			</div>
+		</section>
+
+		<!-- =================== Services =============== -->
+		<section id="our-services" class="section-services">
+			<div class="container">
+				<h2 class="section-title">Gifts for all Occasions</h2>
+				<p class="text-clarification">
+					“Try our web app to find the best gifts for all occasions”
+				</p>
+
+				<ul class="services-list">
+
+					<li class="services-card">
+						<img class="services-img" src="assets/img/services-img-1.jpg" alt="happy birthday">
+						<div class="services-card-text">
+							<h3 class="holiday-name">Birthday</h3>
+							<a href="#" class="more">See More ›</a>
+						</div>
+					</li>
+
+					<li class="services-card">
+						<img class="services-img" src="assets/img/services-img-2.jpg" alt="anniversary">
+						<div class="services-card-text">
+							<h3 class="holiday-name">Anniversary</h3>
+							<a href="#" class="more">See More ›</a>
+						</div>
+					</li>
+
+					<li class="services-card">
+						<img class="services-img" src="assets/img/services-img-3.jpg" alt="Valentine's Day">
+						<div class="services-card-text">
+							<h3 class="holiday-name">Valentine's Day</h3>
+							<a href="#" class="more">See More ›</a>
+						</div>
+					</li>
+
+					<li class="services-card">
+						<img class="services-img" src="assets/img/services-img-4.jpg" alt="Christmas">
+						<div class="services-card-text">
+							<h3 class="holiday-name">Christmas</h3>
+							<a href="#" class="more">See More ›</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!-- =================== Get Started =============== -->
+
+		<section class="section-get-started">
+			<div class="container">
+				<div class="get-started-block-text">
+					<p class="get-started-text">
+						Ready to get started?
+					</p>
+					<p class="get-started-text">
+						Sign up or contact us
+					</p>
+				</div>
+
+				<div class="block-section-button">
+					<a href="#" class="section-button get-started-btn">Find gift now</a>
+					<a href="#" class="section-button get-started-btn">How it works</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- =================== Our Blog =============== -->
+
+		<section id="our-blog" class="section-blog">
+			<div class="container">
+				<h2 class="section-title">Our Best Blogs Ever</h2>
+				<p class="text-clarification">“Try our blog to find the best tips and tricks to select your gift”</p>
+				<article class="main-article">
+					<img class="blog-photo" src="assets/img/blog-img.jpg" alt="photo couple blog">
+					<div class="article-content">
+						<span class="author">Mr. John Doe</span>
+						<h2 class="main-article-title">The best way to wish your wife</h2>
+						<a href="#" class="article-read-more">Read More</a>
+					</div>
+				</article>
+
+				<section class="section-another-articles">
+					<div class="articles">
+						<article class="another-article">
+							<h2 class="article-title">Database to find the gifts for your girlfriend</h2>
+							<p class="article-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+								perferendis vel accusamus, molestiae alias ea tempore pariatur adipisci qui culpa tempora a labore
+								similique, voluptatem, explicabo cumque dolorum excepturi enim?</p>
+							<a href="#" class="read-more">Read More</a>
+						</article>
+
+					</div>
+
+					<div class="articles">
+						<article class="another-article">
+							<h2 class="article-title">How Artificial Intelligence read your mind to find the best gift</h2>
+							<p class="article-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+								perferendis vel accusamus, molestiae alias ea tempore pariatur adipisci qui culpa tempora a labore
+								similique, voluptatem, explicabo cumque dolorum excepturi enim?</p>
+							<a href="#" class="read-more">Read More</a>
+						</article>
+
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+	</main>
+
+	<!-- =================== Footer =============== -->
+
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer-nav">
+				<a href="index.html" class="footer-nav-link">Home</a>
+				<a href="#about-us" class="footer-nav-link">About Us</a>
+
+				<a href="index.html" class="footer-nav-link footer-logo-for-main">
+					<img src="assets/img/svg/logo-act.svg" alt="logotype" class="footer-logo">
+				</a>
+
+				<a href="#our-services" class="footer-nav-link">Services</a>
+				<a href="#our-blog" class="footer-nav-link">Blogs</a>
+			</nav>
+
+			<!-- Social media links -->
+			<nav class="footer-socials">
+				<a href="https://www.facebook.com/" target="_blank" rel="noopener" class="socials-item">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="https://twitter.com/" target="_blank" rel="noopener" class="socials-item">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="socials-item">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://www.youtube.com/" target="_blank" rel="noopener" class="socials-item">
+					<i class="fab fa-youtube"></i>
+				</a>
+				<a href="https://www.pinterest.com/" target="_blank" rel="noopener" class="socials-item">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
+			</nav>
+
+			<div class="copyright">
+				<span class="copyright-text">© 2010 — 2020</span>
+				<span>
+					Privacy — Terms
+				</span>
+			</div>
+
+		</div>
+	</footer>
+
+	<a class="to-up-link" href="#" title="To top">
+		<i class="fas fa-sort-up"></i>
+	</a>
+	</div>
+
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

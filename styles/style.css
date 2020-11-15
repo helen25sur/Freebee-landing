@@ -1,0 +1,708 @@
+@import 'fonts.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ==== Common Styles ===== */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-size: 18px;
+	color: #000000;
+	background-color: #FAFAFA;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/* .clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+} */
+
+/* ==== Styles Header ===== */
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 39px 5.55%;
+
+}
+
+.logo-for-main {
+	/* float: left; */
+	display: block;
+	margin: 8px 0;
+	background-image: url('../assets/img/svg/logo.svg');
+	width: 41px;
+	height: 39px;
+}
+
+.logo-for-main:hover {
+	transform: scale(1.1);
+	background-image: url('../assets/img/svg/logo-act.svg');
+}
+
+.logo-for-main .logo {
+	display: none;
+}
+
+
+.finder-popup {
+	/* float: right; */
+	padding: 15px 20px;
+}
+
+.section-button {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #F7941E;
+	background-color: transparent;
+	border: 1px solid #F7941E;
+	border-radius: 5px;
+}
+
+.section-button:hover {
+	color: #fff;
+	background-color: #F7941E;
+	cursor: pointer;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.main-navigation {
+	/* width: 65%; */
+	margin: 0 auto;
+	padding: 15px 0;
+	font-size: 0;
+}
+
+.nav-link {
+	display: inline-block;
+	margin-right: 31px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav-link:last-child {
+	margin-right: 0;
+}
+
+.nav-link:hover {
+	color: #F7881E;
+	transform: scale(1.1);
+}
+
+/* ==== Styles Section About Company ===== */
+
+.section-promo {
+	display: flex;
+
+	background-color: #F2F2F2;
+}
+
+.section-promo:nth-child(odd) .section-text {
+	/* padding: 90px 8.75% 0 11.25%; */
+
+	order: 2;
+}
+
+.section-promo:nth-child(even) .section-text {
+	/* padding: 165px 165px 0 110px; */
+	/* padding: 140px 11.25% 0 7.77%; */
+
+	order: 2;
+}
+
+.section-promo:nth-child(odd) .promo-photo {
+	order: 3;
+}
+
+.section-promo:nth-child(even) .promo-photo {
+	order: 2;
+}
+
+.section-text,
+.promo-photo {
+	/* display: inline-block;
+	font-size: 0; */
+	width: 50%;
+
+}
+
+.section-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* height: 56vh; */
+	overflow: auto;
+	padding: 90px;
+}
+
+.tagline {
+	margin-bottom: 36px;
+	font-size: 56px;
+	line-height: 69px;
+	font-weight: bold;
+}
+
+.text-promo-description,
+.text-description {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.text-description {
+	text-align: justify;
+}
+
+.more-gifts {
+	align-self: start;
+	margin-top: 52px;
+	padding: 20px 25px;
+}
+
+.all-about-us {
+	align-self: start;
+	margin-top: 35px;
+	padding: 21px 46px;
+}
+
+.section-title {
+	margin-bottom: 25px;
+	font-size: 32px;
+	line-height: 45px;
+}
+
+/* ==== Styles Section Services ===== */
+
+.section-services {
+	text-align: center;
+	padding-top: 96px;
+	padding-bottom: 137px;
+	background-color: #ffffff;
+}
+
+.text-clarification {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.services-list {
+	padding-top: 64px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-card {
+	text-align: left;
+	vertical-align: top;
+	background-color: #FAFAFA;
+}
+
+.services-card:last-child {
+	margin-right: 0;
+}
+
+.services-card:hover {
+	background-color: #ffffff;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+
+.services-img {
+	width: 270px;
+	/* Изображения сейчас все одинаковые, но фиксирую ширину на всякий случай, если вдруг будет изображение с большей шириной */
+}
+
+.services-card-text {
+	padding: 24px;
+}
+
+.holiday-name {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.more {
+	display: inline-block;
+	margin-top: 75px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.more:hover {
+	transform: scale(1.1);
+	text-decoration: underline;
+	color: #F7941E;
+}
+
+/* ==== Styles Section Get Started ===== */
+
+.section-get-started {
+	padding: 80px 0px 70px 0;
+	text-align: center;
+	background-color: #F7941E;
+}
+
+.get-started-block-text {
+	width: 325px;
+	display: inline-block;
+	margin-right: 229px;
+	font-size: 0;
+}
+
+.get-started-text {
+	display: inline-block;
+	font-size: 32px;
+	line-height: 45px;
+	color: #000000;
+}
+
+.get-started-text:first-of-type {
+	font-weight: bold;
+}
+
+.block-section-button {
+	display: inline-block;
+	margin-top: 15px;
+	vertical-align: top;
+	font-size: 0;
+}
+
+.get-started-btn {
+	margin-right: 16px;
+	padding: 20px 25px;
+	color: #000000;
+	border-color: #000000;
+}
+
+.get-started-btn:last-child {
+	margin-right: 0;
+}
+
+.get-started-btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/* ==== Styles Section Our Section ===== */
+
+.section-blog {
+	padding-top: 88px;
+	padding-bottom: 80px;
+	background-color: #fff;
+}
+
+.section-blog .section-title,
+.section-blog .text-clarification {
+	text-align: center;
+}
+
+.main-article {
+	margin-top: 71px;
+	background-color: #231F20;
+	color: #ffffff;
+}
+
+.blog-photo,
+.article-content {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.blog-photo {
+	width: 400px;
+}
+
+.article-content {
+	padding-top: 63px;
+	padding-left: 78px;
+}
+
+.author {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.main-article-title {
+	max-width: 492px;
+	margin-top: 27px;
+	margin-bottom: 60px;
+	font-size: 48px;
+	line-height: 58px;
+}
+
+.article-read-more {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.article-read-more:hover,
+.read-more:hover {
+	display: inline-block;
+	transform: scale(1.1);
+	text-decoration: underline;
+	color: #F7941E;
+}
+
+.section-another-articles {
+	padding-top: 40px;
+	font-size: 0;
+}
+
+div.articles {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.another-article {
+	margin-right: 15px;
+	padding: 48px;
+}
+
+.articles:last-child .another-article {
+	margin-right: 0;
+	margin-left: 15px;
+	/* так как два блока .another-article по макету одинаковой ширины, и чтобы не фиксировать явно ширину, располовинила отступы. */
+}
+
+.another-article:hover {
+	background: #FFFFFF;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+
+.article-title {
+	margin-bottom: 16px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+}
+
+.article-paragraph {
+	margin-bottom: 31px;
+	font-size: 18px;
+	line-height: 25px;
+
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	/* На WebReference нашла такой вариант решения, чтобы обрезался текст после двух строчек и чтобы вставлялось троеточие*/
+}
+
+.read-more {
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+/* ==== Styles Footer ===== */
+
+.footer {
+	padding-top: 115px;
+	padding-bottom: 35px;
+	background: #FAFAFA;
+	text-align: center;
+}
+
+.footer-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-nav::after {
+	content: '';
+	width: 1000px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 43px;
+	border-bottom: 1px solid #000;
+}
+
+.footer-nav-link {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer-nav-link:first-child {
+	margin-right: 81px;
+}
+
+.footer-nav-link:last-child {
+	margin-left: 81px;
+	/* было 54px, поставила 81 ради симметрии с первым пунктом */
+}
+
+.footer-nav-link:hover {
+	transform: scale(1.1);
+	color: #F7941E;
+	text-decoration: underline;
+}
+
+.footer-logo-for-main {
+	display: inline-block;
+	margin: 0 141px;
+	vertical-align: middle;
+	background-image: url('../assets/img/svg/logo-act.svg');
+	width: 41px;
+	height: 39px;
+}
+
+.footer-logo-for-main:hover {
+	background-image: url('../assets/img/svg/logo.svg');
+}
+
+.footer-logo {
+	display: none;
+}
+
+.footer-socials {
+	max-width: 296px;
+	margin: 0 auto;
+	padding-top: 55px;
+	font-size: 0;
+}
+
+.socials-item {
+	display: inline-block;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	margin-right: 24px;
+	border-radius: 50%;
+	background-color: black;
+	color: #fafafa;
+	text-align: center;
+	line-height: 42px;
+}
+
+.socials-item:last-of-type {
+	margin-right: 0;
+}
+
+.socials-item:hover {
+	color: #f7941e;
+}
+
+.copyright {
+	padding-top: 72px;
+}
+
+.copyright-text {
+	margin-right: 14px;
+}
+
+
+/* Styles button "Up" */
+.to-up-link {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 50px;
+	right: 5%;
+	font-size: 35px;
+	color: #000000;
+	text-align: center;
+	line-height: 64px;
+	background-color: rgba(247, 136, 30);
+	border-radius: 5px;
+	border: 1px solid #000000;
+	opacity: 0.5;
+}
+
+.to-up-link:hover {
+	cursor: pointer;
+	background-color: #F7881E;
+	opacity: 1;
+}
+
+/* ===== Media-запросы ====== */
+
+@media screen and (max-width: 600px) {
+
+	/* Посмотреть, как правильно сделать меню для мобильных телефонов */
+	.main-header {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.mobile-menu {
+		display: block;
+	}
+
+	.mobile-menu:hover {
+		color: #F7881E;
+	}
+
+	.mobile-menu .fa-bars {
+		font-size: 25px;
+	}
+
+	.main-navigation {
+		display: none;
+	}
+
+	.main-navigation.active {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-navigation.active .nav-link {
+		width: 100%;
+		margin-right: 0;
+		font-size: 20px;
+		line-height: 1.5;
+		border-bottom: 1px solid lightgray;
+	}
+
+	.main-navigation.active .nav-link:hover {
+		transform: none;
+	}
+
+	.finder-popup {
+		display: none;
+	}
+
+	.section-promo {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.section-text,
+	.promo-photo {
+		width: 100%;
+	}
+
+	.section-text {
+		padding: 45px 25px;
+		height: auto;
+	}
+
+	.section-promo:nth-child(odd) .section-text {
+		padding-bottom: 35px;
+	}
+
+	.section-promo:nth-child(even) .section-text {
+		padding-top: 90px;
+		padding-bottom: 35px;
+		order: 1;
+	}
+
+	.section-services {
+		padding-bottom: 100px;
+	}
+
+	.services-list {
+		overflow: scroll;
+		scroll-snap-type: x proximity;
+		scroll-behavior: smooth;
+		scroll-padding: 0 50%;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.services-card {
+		margin: 15px;
+		scroll-snap-align: center;
+		scroll-snap-stop: always;
+
+	}
+
+	.services-card:last-child {
+		margin-right: 35px;
+	}
+
+	.services-img {}
+
+	.get-started-block-text {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.get-started-btn {
+		width: 200px;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.blog-photo {
+		width: 100%;
+	}
+
+	.article-content {
+		padding: 30px 40px;
+	}
+
+	div.articles {
+		width: 100%;
+	}
+
+	.another-article {
+		margin-right: 0;
+	}
+
+	.articles:last-child .another-article {
+		margin-left: 0;
+	}
+
+	.footer {
+		padding-top: 55px;
+	}
+
+	.footer-nav {
+		flex-direction: column;
+	}
+
+	.footer-nav::after {
+		display: none;
+	}
+
+	.footer-nav-link {
+		margin-bottom: 15px;
+	}
+
+	.footer-nav-link:first-child {
+		margin-right: 0;
+	}
+
+	.footer-nav-link:last-child {
+		margin-left: 0;
+	}
+}
