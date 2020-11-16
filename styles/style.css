@@ -209,12 +209,17 @@ body {
 }
 
 .services-list {
+	/* width: 100%; */
+	position: relative;
 	padding-top: 64px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .services-card {
+	width: 270px;
+	max-width: 25%;
+	margin-right: 20px;
 	text-align: left;
 	vertical-align: top;
 	background-color: #FAFAFA;
@@ -231,8 +236,7 @@ body {
 }
 
 .services-img {
-	width: 270px;
-	/* Изображения сейчас все одинаковые, но фиксирую ширину на всякий случай, если вдруг будет изображение с большей шириной */
+	width: 100%;
 }
 
 .services-card-text {
@@ -258,6 +262,28 @@ body {
 	transform: scale(1.1);
 	text-decoration: underline;
 	color: #F7941E;
+}
+
+.slick-list {
+	max-height: 500px;
+}
+
+.slick-btn {
+	width: 70px;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.slick-prev {
+	left: 2%;
+}
+
+.slick-next {
+	right: 3%;
 }
 
 /* ==== Styles Section Get Started ===== */
@@ -631,26 +657,13 @@ div.articles {
 		padding-bottom: 100px;
 	}
 
-	.services-list {
-		overflow: scroll;
-		scroll-snap-type: x proximity;
-		scroll-behavior: smooth;
-		scroll-padding: 0 50%;
-		-webkit-overflow-scrolling: touch;
-	}
-
 	.services-card {
 		margin: 15px;
-		scroll-snap-align: center;
-		scroll-snap-stop: always;
-
 	}
 
 	.services-card:last-child {
 		margin-right: 35px;
 	}
-
-	.services-img {}
 
 	.get-started-block-text {
 		width: 100%;
