@@ -117,7 +117,7 @@ body {
 a, button,
 .services-card,
 .another-article {
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 /* ==== Styles Section About Company ===== */
@@ -587,7 +587,7 @@ div.articles {
 
 /* ===== Media-запросы ====== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
 	/* Посмотреть, как правильно сделать меню для мобильных телефонов */
 	.main-header {
